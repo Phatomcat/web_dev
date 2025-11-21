@@ -1,0 +1,37 @@
+body{
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: rgb(187, 124, 7);
+  color: rgb(194, 194, 194);
+  padding:50px;
+}
+#first_image{
+    width:20%;
+            
+}
+#second_image{
+ width:20%;
+    display:flex;
+    align-items: right;
+    flex-wrap: wrap;                
+}
+#img-wrapper{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-column-start: 5
+}
+#first-p{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding:25px;
+    margin:2%;
+    
+}
+#second-p{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding:25px;
+    margin:2%;
+
+}

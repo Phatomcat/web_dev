@@ -8,6 +8,35 @@
           <link rel="stylesheet" href="styles2.css">
         <title>Cats are cool!!!!!!!</title>
         <meta charset="UTF-8">
+        <script>
+        showing = "none"
+        function show(){
+            if (showing == "none"){
+                document.getElementById("hidden").style.display = "block"
+                showing = "block"
+                document.getElementById("button").innerHTML= "show less"
+            }else{
+                document.getElementById("hidden").style.display = "none"
+                showing ="none"
+                document.getElementById("button").innerHTML= "show more"
+            }
+        }
+        images=["https://i.pinimg.com/564x/a9/c2/dc/a9c2dc88da90a75c10ee66860eee6fd2.jpg"]
+        index=0
+
+        function change(){
+            document.getElementById("first_image").src = images[index]
+            index += 1
+            if(index >= images.length){
+                index=0
+            }
+        }
+
+
+
+
+
+        </script>
     </head>
     <body>
         <div id="all">
@@ -15,7 +44,7 @@
             <h1>Cat Breeds and Why Cats are Chill.</h1>
             </div>
             <div id="photos1">
-            <img id="first_image" src="https://i.pinimg.com/originals/b0/5e/45/b05e457c76d2deac88e85c70804bef89.gif" alt="cat_backflip"/>
+            <img id="first_image" src="https://i.pinimg.com/originals/b0/5e/45/b05e457c76d2deac88e85c70804bef89.gif" onmouseover={change()} alt="cat_backflip"/>
             <img id="second_image" src="https://schertzanimalhospital.com/wp-content/uploads/2022/03/cat-behavior-schertz-tx.jpg" alt="cat_glasses"/>
             </div>
 
@@ -45,8 +74,10 @@
             <li>Maine Coon</li>
         </ul>
 
-
-
+        <button id="button" onclick={show()}>show more</button>
+        <p id="hidden">These breeds of cats are popular because of their personality and each has a different one. Tabby cats are generally more outside cats and like to go and chase mice. Ragdoll cats are known for their personality and how when you pick them up, the fall over and stay still in their arms. British Shorthairs are known for being independent and want to be alone, and they are also known for being muscular cats. These are why they are popular.</p>
+        <img id="hidden" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuwY76gkWhPR5eVy4gYi1q2El8oxJlWVSmeA&s"/>
+    
 
 
         <div id="wiki-link">

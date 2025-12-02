@@ -38,3 +38,6 @@ margin:20px;
 padding:20px;
 
 }
+#hidden, #hidden_image{
+    display:none
+}

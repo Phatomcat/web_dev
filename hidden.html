@@ -3,9 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cats</title>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            background-color: rgb(255, 166, 0);
+            padding:40px;
+
+        }
+        #secret{
+            width:220px;
+            height:45px;
+            text-align:center;
+            margin-top: 25px;
+        }
+        #hiddencat{
+            display:none;
+            width:250px;
+            margin-top:20px;
+        }
+
+
+    </style>
+
+<script>
+    function showcat(){
+        document.getElementById("hiddencat").style.display ="block";
+
+    }
+    function hidecat(){
+        document.getElementById("hiddencat").style.display="none";
+    }
+
+</script>
+
 </head>
 <body>
+<h1>Cats</h1>
     
+
+<p>Cats are cool and I think that they are awesome. First cats come in many breeds and in many diffrent colors. My favorite is the British Shorhair because of their shorthair, and that they have a pretty coat of fur. I also like the ragdoll cats because you can pick them up and they will just stay in your arms. These are some reasons why I like cats.</p>
+<p>I like kittens more then adult cats and here is why. Kittens while they are young like to play games which some cats do when they are older but when they are a kitten they usually always play. I personally think that they are cuter but that is debatable. I also like kittens because when they are young they usually like to be picked up and pet. These are some reasons why I like kittens more than adult cats.</p>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDim25Sj5loXJbpYM0NKMZI2geNtFbDme5A&s">
+
+<h2>different cat breeds</h2>
+<ul>
+    <li>ragdoll</li>
+    <li>siamese</li>
+    <li>maine coon</li>
+    <li>british shorthair</li>
+    <li>tabby</li>
+</ul>
+
+<div id="secret" onmouseover="showcat()"
+onmouseout="hidecat()">Hover for a cat</div>
+<img id="hiddencat"src=https://media.istockphoto.com/id/1443562748/photo/cute-ginger-cat.jpg?s=612x612&w=0&k=20&c=vvM97wWz-hMj7DLzfpYRmY2VswTqcFEKkC437hxm3Cg=>
+
+
+
+
+
+
+
+
+
 </body>
 </html>

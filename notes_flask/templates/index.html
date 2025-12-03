@@ -1,26 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>template home</title>
-    <style>
-        img{
-            height: 300px;
-            width:auto
-        }
-    </style>
-</head>
-<body>
-    <h1>first flask project</h1>
+{% extends "base.html" %}
+{% block content %}Home - Flask{% endblock %}
+{% block body %}
+    <h1>WELCOME</h1>
     <form method="POST">
         <label for="name">whats your name:</label>
         <input type="text" name="name" placeholder="name">
         <br>
         <input type="submit" value="Submit">
     <img src="https://i.redd.it/ims06c64idb91.jpg" alt="mybro">
-
-
-
-</body>
-</html>
+{% endblock %}

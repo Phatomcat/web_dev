@@ -20,27 +20,59 @@
     
 
     <script>
+        index=0
+
+
+
+
         
+        showing="none"
+        function show(){
+    if (showing == "none") {
+        document.getElementById("hidden").style.display = "block"
+        document.getElementById("hidden_image").style.display = "block"
+        showing = "block"
+        document.getElementById("button").textContent = "show less"
+    } else {
+        document.getElementById("hidden").style.display = "none"
+        document.getElementById("hidden_image").style.display = "none"
+        showing = "none"
+        document.getElementById("button").textContent = "show more"
+    }
+}
 
     </script>
 </head>
-<body>
+<div id="all">
+<body style="background-color: rgb(255, 192, 76);">
+
     <h1 id="header"><b>Arches National Park</b></h1>
     <p>Arches National Park is one of Utah's beautiful parks because of the red rock, and of course the arches. The coolest arch that is in that park is called Delicate Arch because of it's thin rock and how it looks like it is going to fall over. This arch is one of the license plates styles and can be bought. This is one of the amazing arches in Arches National Park and there is still more arches and canyons to be looked at. This park can be fully driven around and there are some hikes that you can do, like the one to delicate arch.   </p>
+
+    <h2 id="second_header">The reasons why you should go to Arches National Park</h2>
+ 
+    <ol id="first_list">
+        <li>The red rock</li>
+        <li>The red rock arches you don't see anywhere else</li>
+        <li>The drive around the park</li>
+        <li>The canyons</li>
+    </ol>
+
+
     <img id="first_image" src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Delicate_arch_sunset.jpg" alt="Delicate Arch">
     <img id="second_image" src="https://www.moabtimes.com/wp-content/uploads/2022/08/32-delicate.jpg" alt="Delicate Arch Milky Way">
     <img id="third_image" src="https://adventr.co/wp-content/uploads/2019/01/DelicateCover.jpg">
 
 
+<button id="button" onclick="show()">show more</button>
+        <p id="hidden">The Delicate Arch I think is the best one!</p>
 
 
 
 
 
-
-
-
-
-
+</div>
 </body>
+
+
 </html>

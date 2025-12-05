@@ -11,32 +11,39 @@ p{
 
 }
 #first_image{
-    display:grid;
-    grid-template-columns: 1fr;
-    width:150px;
-    margin:10px;
-    padding:15px;
+    display:flex;
+    -ms-flex-align: end;
+    width:20%;
+    margin:15px;
+    padding:25px;
+
 }
 #second_image{
     display:grid;
     grid-template-columns: 1fr;
-    width:150px;
+    width:20%;
     margin:15px;
     padding:15px;
 }
 #third_image{
     display:grid;
     grid-template-columns: 1fr;
-    width:150px;
+    width:20%;
     margin:15px;
     padding:15px;
 }
 #first_list{
+  display:grid;
+  grid-template-columns: 1fr;
+  width:1200px;
+  margin:5px;
+  padding:5px;
   font-family: "Lexend", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: 350;
   color:rgb(246, 86, 0)
+  
 }
 #second_header{
   font-family: "Exo 2", sans-serif;

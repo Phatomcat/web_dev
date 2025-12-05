@@ -20,8 +20,18 @@
     
 
     <script>
+        images=["https://www.livingthedreamrtw.com/wp-content/uploads/2022/07/Arches-National-Park-2000px-048.jpg","https://www.livingthedreamrtw.com/wp-content/uploads/2022/07/Arches-National-Park-2000px-072.jpg"]
         index=0
 
+
+
+        function change(){
+            document.getElementById("first_image").src = images[index]
+            index += 1
+            if(index >= images.length){
+                index=0
+            }
+        }
 
 
 
@@ -59,13 +69,14 @@
     </ol>
 
 
-    <img id="first_image" src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Delicate_arch_sunset.jpg" alt="Delicate Arch">
+    <img id="first_image" src="https://www.livingthedreamrtw.com/wp-content/uploads/2022/07/Arches-National-Park-2000px-048.jpg" onmouseover=change() alt="Delicate Arch">
     <img id="second_image" src="https://www.moabtimes.com/wp-content/uploads/2022/08/32-delicate.jpg" alt="Delicate Arch Milky Way">
     <img id="third_image" src="https://adventr.co/wp-content/uploads/2019/01/DelicateCover.jpg">
 
 
 <button id="button" onclick="show()">show more</button>
-        <p id="hidden">The Delicate Arch I think is the best one!</p>
+        <p id="hidden">Delicate Arch I think is the best thing to see!</p>
+        <img id="hidden_image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLP-4WGjPqmM6EJquc9o0dATuk14WmYnkk8Q&s">
 
 
 
